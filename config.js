@@ -9,7 +9,7 @@ const DATABASE_URL =
   process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || '').trim(),
+  SESSION_ID: (process.env.SESSION_ID || 'levanter_30803fd40876d740aca869d3656e5a190c').trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -28,7 +28,7 @@ module.exports = {
           logging: false,
         }),
   HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
-  SUDO: process.env.SUDO || '',
+  SUDO: process.env.SUDO || '263713389007',
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
   HEROKU_API_KEY: process.env.HEROKU_API_KEY,
   BRANCH: 'master',
@@ -53,7 +53,7 @@ module.exports = {
   AUTO_STATUS_VIEW: (process.env.AUTO_STATUS_VIEW || 'false').trim(),
   SEND_READ: process.env.SEND_READ,
   KOYEB: toBool(process.env.KOYEB),
-  KOYEB_NAME: (process.env.KOYEB_NAME || '').trim(),
+  KOYEB_NAME: (process.env.KOYEB_NAME || 'JØKĘÝ').trim(),
   KOYEB_API: (process.env.KOYEB_API || '').trim(),
   AJOIN: process.env.AJOIN,
   GPT: (process.env.GPT || 'free').trim(),
@@ -78,7 +78,7 @@ module.exports = {
   BING_COOKIE: (process.env.BING_COOKIE || '').trim(),
   GEMINI_API_KEY: (process.env.GEMINI_API_KEY || '').trim(),
   ADMINS: process.env.GROUP_ADMINS || '',
-  RENDER_NAME: (process.env.RENDER_NAME || '').trim(),
+  RENDER_NAME: (process.env.RENDER_NAME || 'JØKĘÝ').trim(),
   RENDER_API_KEY: (process.env.RENDER_API_KEY || '').trim(),
   TIMEZONE: process.env.TIMEZONE,
   CMD_REACTION: process.env.CMD_REACTION || 'true',
